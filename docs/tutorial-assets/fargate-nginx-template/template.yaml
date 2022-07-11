@@ -66,10 +66,10 @@ spec:
           destination: ${{ parameters.repoUrl | parseRepoUrl }}
           http_port: 8080
           # The AWS Proton environments to use for deploying the initial service instances
-          aws_proton_dev_environment_name: "backstage-proton-plugins-tutorial-env"
-          aws_proton_prod_environment_name: "backstage-proton-plugins-tutorial-env"
+          aws_proton_dev_environment_name: "env-1"
+          aws_proton_prod_environment_name: "env-1"
           # The AWS account where the Proton service will be created
-          aws_account_id: "111111111111"
+          aws_account_id: "947751419169"
           # The AWS region where the Proton service will be created
           aws_region: us-east-1
 
@@ -94,9 +94,9 @@ spec:
         serviceSpecPath: ./spec.yaml
         # Update the following fields to match the resources in your AWS account
         region: us-east-1
-        templateName: backstage-proton-plugins-tutorial-svc-template
+        templateName: service-temp-1
         templateMajorVersion: '1'
-        repositoryConnectionArn: 'arn:aws:codestar-connections:us-east-1:111111111111:connection/c176b204-5bb1-48f1-b977-5aff4fa2df9d'
+        repositoryConnectionArn: 'arn:aws:codestar-connections:us-east-1:947751419169:connection/fd2828e1-367e-4d30-9c84-b85e21ea979c'
 
     - id: register
       name: Register
